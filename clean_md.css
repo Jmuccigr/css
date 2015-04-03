@@ -1,5 +1,6 @@
-body 
-{	background-color: #F5F5F5;
+body
+{
+	background-color: #F5F5F5;
 	font-family: "Georgia","Baskerville","Times","Times New Roman","Serif";
 	font-size: 13pt;
 	line-height: 110%;
@@ -9,7 +10,7 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0pt 75pt 50pt 75pt;
-	}
+}
 
 p
 {
@@ -32,43 +33,7 @@ span.textbox
 	padding: 0pt 75pt 50pt 75pt;
 }
 
-img
-{
-	float: right;
-	width: 150px;
-	height: auto;
-	border:1pt solid;
-	top: 50pt;
-	position: relative;
-}
-
-/*	display: inline-block;
-	position: relative;
-	top: 75pt;*/
-
-ul
-{
-	line-height: 150%;
-	list-style-type: disc;
-}
-
-A
-{
-	background: transparent;
-	border-bottom: thin dotted;
-	text-decoration: none;
-	color: inherit;
-}
-
-A:visited { }
-
-A:hover
-{
-	background-color: #333;
-	color: #E6E6E6;
-}
-
-H1, H2, H3, H4, H5, H6, .small_heading, .right_heading
+H1, H2, H3, H4, H5, H6, .small_heading, .right_heading, table
 {
 	font-family: "Gill Sans","Helvetica","sans-serif";
 	clear: both;
@@ -103,7 +68,6 @@ H4
 	font-size: 13pt;
 	font-weight: normal;
 	margin-top: 0pt;
-	font-family: "Gill Sans MT", "Helvetica","sans-serif";
 }
 
 H5
@@ -118,15 +82,54 @@ H6
 	font-weight: bold;
 }
 
-table
-{
-	border-top: 2px solid gray;
-	width: 100%;
-}
+table { width: 100%; }
 
 th
 {
-	color: #F5F5F5; /*same as background to render invisible*/
+	background: red;
+	display: none;
+}
+
+p ~ table
+{
+	margin-top: 2em;
+	border-top: 2px solid gray;
+}
+
+img
+{
+	float: right;
+	width: 150px;
+	height: auto;
+	border: 1pt solid;
+	top: 50pt;
+	position: relative;
+}
+
+/*	display: inline-block;
+	position: relative;
+	top: 75pt;*/
+
+ul
+{
+	line-height: 150%;
+	list-style-type: disc;
+}
+
+A
+{
+	background: transparent;
+	border-bottom: thin dotted;
+	text-decoration: none;
+	color: inherit;
+}
+
+A:visited { }
+
+A:hover
+{
+	background-color: #333;
+	color: #E6E6E6;
 }
 
 *.small_heading
@@ -174,9 +177,10 @@ th
 
 .footer
 {
-	border-top: 2px solid gray; 
-	margin-top: 25pt; 
+	border-top: 2px solid gray;
+	margin-top: 25pt;
 	text-align: center;
+	color: red;
 }
 
 hr
