@@ -42,7 +42,7 @@ H1, H2, H3, H4, H5, H6, .small_heading, .right_heading, table
 H1
 {
 	font-size: 24pt;
-	font-weight: normal;
+	font-weight: lighter;
 	font-variant: small-caps;
 	letter-spacing: .07em;
 }
@@ -82,7 +82,11 @@ H6
 	font-weight: bold;
 }
 
-table { width: 100%; }
+table 
+{
+	width: 100%;
+	font-weight: lighter;
+}
 
 th
 {
