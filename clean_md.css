@@ -116,8 +116,14 @@ img
 
 ul
 {
-	line-height: 150%;
+	line-height: 110%;
 	list-style-type: disc;
+	padding: 0pt 0pt 0pt 150pt;
+}
+
+p + ul
+{
+	margin-top: -5pt;
 }
 
 A
@@ -175,8 +181,10 @@ A:hover
 *.item_standalone
 {
 	display: inline-block;
+	line-height: 110%;
 	text-align: left;
-	margin-left: 30pt;
+	padding-left: 12pt;
+	margin-bottom: 7pt;
 }
 
 .footer
