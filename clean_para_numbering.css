@@ -84,7 +84,7 @@ blockquote {
 	font-size: 90%;
 }
 
-/* Give the bilbio section a rule like the notes have. */
+/* Give the bilbio section a leading rule like the notes have. */
 
 #bibliography {
 	border-top: 2px solid gray;
@@ -108,7 +108,7 @@ hr {
 
 #header {
 	border-bottom: 2px solid gray;
-	padding-bottom: 1em;
+	padding-bottom: 0em;
 }
 
 /* To eliminate the extra line spacing in normal sup formatting. */
