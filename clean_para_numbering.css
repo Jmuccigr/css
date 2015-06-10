@@ -99,9 +99,16 @@ hr {
 
 /* Special formatting for the meta-data at the start of the document, from pandoc. */
 
-.title, .author, .date {
+.title, .author, .date, .license {
 	text-align: center;
 	font-weight: lighter;
+}
+
+/* Add divider for content. */
+
+#header {
+	border-bottom: 2px solid gray;
+	padding-bottom: 1em;
 }
 
 /* To eliminate the extra line spacing in normal sup formatting. */
