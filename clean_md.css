@@ -82,7 +82,7 @@ H6
 	font-weight: bold;
 }
 
-table 
+table
 {
 	width: 100%;
 	font-weight: lighter;
@@ -121,10 +121,7 @@ ul
 	padding: 0pt 0pt 0pt 150pt;
 }
 
-p + ul
-{
-	margin-top: -5pt;
-}
+p + ul { margin-top: -5pt; }
 
 A
 {
@@ -198,7 +195,7 @@ A:hover
 hr
 {
 	height: 2px;
-	background-color: #d4b600;
+	/*	background-color: #d4b600; */
 	text-align: center;
 	border: none;
 }
