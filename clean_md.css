@@ -195,7 +195,7 @@ A:hover
 hr
 {
 	height: 2px;
-	/*	background-color: #d4b600; */
+	background-color: gray;
 	text-align: center;
 	border: none;
 }
