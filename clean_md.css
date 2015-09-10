@@ -199,3 +199,24 @@ hr
 	text-align: center;
 	border: none;
 }
+
+@media print
+{
+    table:last-of-type
+        {
+        /* Don't display last table */
+        display: none;
+        font-size: 1%;
+        }
+     a 
+     {
+	/* Make link text identical to other text */
+	border-style: none;
+}
+	body
+	{
+	/* White background to let paper color through */
+	background-color: white;
+	}
+
+}
