@@ -33,11 +33,17 @@ span.textbox
 	padding: 0pt 75pt 50pt 75pt;
 }
 
-H1, H2, H3, H4, H5, H6, .small_heading, .right_heading, table
+H1, H2, H3, H4, H5, H6, .small_heading, .right_heading, table:first-of-type, table:last-of-type
 {
 	font-family: "Gill Sans","Helvetica","sans-serif";
 	clear: both;
 }
+
+H1, H2, H3, H4, H5, H6
+{
+	line-height: 100%;
+}
+
 
 H1
 {
@@ -59,7 +65,7 @@ H3
 	font-size: 15pt;
 	font-weight: normal;
 	border-top: 2px solid gray;
-	margin-top: 20pt;
+	/*margin-top: 20pt;*/
 	padding-top: 8pt;
 }
 
@@ -85,19 +91,61 @@ H6
 table
 {
 	width: 100%;
+	padding-bottom: 6pt;
+}
+
+table tr td
+{
+	/*background-color: red;*/
+	/*margin-bottom: 7pt;*/
+	/*left: 105pt;*/
+	vertical-align: top;
+	padding-bottom: .6em;
+}
+
+table tr td:first-child
+{
+	width: 110pt;
+	/*background-color: red;*/
+	/*margin-bottom: 7pt;*/
+	padding-left: 11pt;
+}
+
+table:first-of-type, table:last-of-type
+{
+	background-color: transparent;
+	padding-left: 0;
+	padding-bottom: 0pt;
+	margin-bottom: inherit;
 	font-weight: lighter;
+}
+
+table:last-of-type
+{
+	border-top: 2px solid gray;
+	margin-top: 2em;
+	padding-top: 1em;
+}
+
+table:first-of-type tr td
+{
+	background-color: transparent;
+	margin-bottom: inherit;
+	padding-left: 0;
+	padding-bottom: .1em;
 }
 
 th
 {
 	background: red;
 	display: none;
+	height: 0;
 }
 
 p ~ table
 {
-	margin-top: 2em;
-	border-top: 2px solid gray;
+	/*margin-top: 2em;*/
+	/*border-top: 2px solid gray;*/
 }
 
 img
