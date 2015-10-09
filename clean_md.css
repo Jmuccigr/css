@@ -178,6 +178,8 @@ A
 	border-bottom: thin dotted;
 	text-decoration: none;
 	color: inherit;
+	word-wrap: break-word;
+	word-break: break-all;
 }
 
 A:visited { }
