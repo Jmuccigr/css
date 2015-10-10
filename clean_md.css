@@ -33,19 +33,19 @@ span.textbox
 	padding: 0pt 75pt 50pt 75pt;
 }
 
-H1, H2, H3, H4, H5, H6, .small_heading, .right_heading, table:first-of-type, table:last-of-type
+h1, h2, h3, h4, h5, h6, .small_heading, .right_heading, table:first-of-type, table:last-of-type
 {
 	font-family: "Gill Sans","Helvetica","sans-serif";
 	clear: both;
 }
 
-H1, H2, H3, H4, H5, H6
+h1, h2, h3, h4, h5, h6
 {
 	line-height: 100%;
 }
 
 
-H1
+h1
 {
 	font-size: 24pt;
 	font-weight: lighter;
@@ -53,14 +53,14 @@ H1
 	letter-spacing: .07em;
 }
 
-H2
+h2
 {
 	font-size: 18pt;
 	font-weight: normal;
 	line-height: 50%;
 }
 
-H3
+h3
 {
 	font-size: 15pt;
 	font-weight: normal;
@@ -69,20 +69,20 @@ H3
 	padding-top: 8pt;
 }
 
-H4
+h4
 {
 	font-size: 13pt;
 	font-weight: normal;
 	margin-top: 0pt;
 }
 
-H5
+h5
 {
 	font-size: 10pt;
 	font-weight: bold;
 }
 
-H6
+h6
 {
 	font-size: 9pt;
 	font-weight: bold;
@@ -172,7 +172,7 @@ ul
 
 p + ul { margin-top: -5pt; }
 
-A
+a
 {
 	background: transparent;
 	border-bottom: thin dotted;
@@ -182,9 +182,9 @@ A
 	word-break: break-all;
 }
 
-A:visited { }
+a:visited { }
 
-A:hover
+a:hover
 {
 	background-color: #333;
 	color: #E6E6E6;
@@ -269,5 +269,4 @@ hr
 	/* White background to let paper color through */
 	background-color: white;
 	}
-
 }

@@ -182,11 +182,11 @@ boxed {
 	border-style: solid;
 }
 
-A.on_black {
+a.on_black {
 	color: white;
 }
 
-A {
+a {
 	text-decoration: none;
 	color: inherit;
 	border-bottom: thin dotted #006 ;
@@ -195,11 +195,11 @@ A {
 	word-break: break-all;
 }
 
-A:visited {
+a:visited {
 	color: #006;
 }
 
-A:hover {
+a:hover {
 	background: #D4B600;
 }
 
