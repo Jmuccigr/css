@@ -50,6 +50,19 @@ img {
 	margin-top: 12pt;
 }
 
+blockquote  {
+	line-height: 130%;
+	font-size: smaller;
+}
+
+ul, ol {
+	line-height: 120%;
+}
+
+ol li {
+	list-style-type: ;
+}
+
 #content_frame {
 	width: 600pt;
 	margin-left: auto;
