@@ -89,11 +89,17 @@ blockquote {
 #bibliography {
 	border-top: 2px solid gray;
 	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+.footnotes {
+	border-top: 2px solid gray;
 }
 
 hr {
 	height: 2px;
-	background-color: gray;
+	display: none;
 	border: none;
 }
 
@@ -161,6 +167,15 @@ A {
 	color: inherit;
 }
 
+a.footnoteRef {
+	border-bottom: none;
+}
+
+a > sup {
+	border-bottom: thin dotted;
+	text-decoration: none;
+}
+
 A:visited {
 	
 }
@@ -218,3 +233,13 @@ A:hover {
 	text-align: center;
 	color: red;
 }
+
+@media print
+{
+	body
+	{
+	/* White background to let paper color through */
+	background-color: white;
+	}
+}
+
