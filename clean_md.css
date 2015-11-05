@@ -65,7 +65,7 @@ h3
 	font-size: 15pt;
 	font-weight: normal;
 	border-top: 2px solid lightgray;
-	/*margin-top: 20pt;*/
+	margin-top: 20pt;
 	padding-top: 8pt;
 }
 
@@ -100,7 +100,7 @@ table tr td
 	/*margin-bottom: 7pt;*/
 	/*left: 105pt;*/
 	vertical-align: top;
-	padding-bottom: .6em;
+	padding-bottom: .3em;
 }
 
 table tr td:first-child
@@ -178,8 +178,6 @@ a
 	border-bottom: thin dotted;
 	text-decoration: none;
 	color: inherit;
-	word-wrap: break-word;
-	word-break: break-all;
 }
 
 a:visited { }
@@ -269,4 +267,5 @@ hr
 	/* White background to let paper color through */
 	background-color: white;
 	}
+
 }
