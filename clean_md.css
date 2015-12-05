@@ -1,7 +1,7 @@
 body
 {
 	background-color: #F5F5F5;
-	font-family: "Georgia","Baskerville","Times","Times New Roman","Serif";
+	font-family: "Old Standard TT", "Georgia","Baskerville","Times","Times New Roman","Serif";
 	font-size: 13pt;
 	line-height: 110%;
 	color: black;
@@ -63,7 +63,7 @@ h2
 h3
 {
 	font-size: 15pt;
-	font-weight: normal;
+	font-weight: lighter;
 	border-top: 2px solid lightgray;
 	margin-top: 20pt;
 	padding-top: 8pt;
@@ -72,7 +72,7 @@ h3
 h4
 {
 	font-size: 13pt;
-	font-weight: normal;
+	font-weight: lighter;
 	margin-top: 0pt;
 }
 
@@ -106,8 +106,6 @@ table tr td
 table tr td:first-child
 {
 	width: 110pt;
-	/*background-color: red;*/
-	/*margin-bottom: 7pt;*/
 	padding-left: 11pt;
 }
 
@@ -133,6 +131,11 @@ table:first-of-type tr td
 	margin-bottom: inherit;
 	padding-left: 0;
 	padding-bottom: .1em;
+}
+
+table:not(:first-of-type):not(:last-of-type) tr td:first-child
+{
+	font-size: smaller;
 }
 
 th
@@ -165,7 +168,7 @@ img
 ul
 {
 	line-height: 130%;
-	list-style-type: disc;
+	list-style-type: circle;
 	padding: 0pt 0pt 0pt 150pt;
 	margin-top:  -.5em;
 }
