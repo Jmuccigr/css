@@ -82,20 +82,9 @@ table tr td {
 }
 
 table tr td:first-child {
-	width: 110pt;
-	
-
-/*background-color: red;*/
-	
-
-/*margin-bottom: 7pt;*/
-	padding-left: 11pt;
 }
 
 th {
-	background: red;
-	display: none;
-	height: 0;
 }
 
 p ~ table {
