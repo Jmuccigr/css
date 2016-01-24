@@ -161,10 +161,6 @@ img
 	position: relative;
 }
 
-/*	display: inline-block;
-	position: relative;
-	top: 75pt;*/
-
 ul
 {
 	line-height: 130%;
@@ -173,7 +169,7 @@ ul
 	/*margin-top:  -.5em;*/
 }
 
-p + ul { margin-top: -5pt; }
+/*p + ul { margin-top: -5pt; }*/
 
 a
 {
@@ -254,17 +250,6 @@ hr
 
 @media print
 {
-    table:last-of-type
-        {
-        /* Don't display last table */
-        display: none;
-        font-size: 1%;
-        }
-     a 
-     {
-	/* Make link text identical to other text */
-	border-style: none;
-}
 	body
 	{
 	/* White background to let paper color through */
