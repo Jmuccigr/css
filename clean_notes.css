@@ -49,12 +49,9 @@ h6 {
 }
 
 img {
-	float: right;
-	width: 150px;
-	height: auto;
+	width: 400px;
 	border: 1pt solid;
-	top: 50pt;
-	position: relative;
+	border-color: gray;
 }
 
 blockquote {
