@@ -96,7 +96,6 @@ table
 
 table tr td
 {
-	/*background-color: red;*/
 	/*margin-bottom: 7pt;*/
 	/*left: 105pt;*/
 	vertical-align: top;
@@ -153,12 +152,7 @@ p ~ table
 
 img
 {
-	float: right;
-	width: 150px;
 	height: auto;
-	border: 1pt solid;
-	top: 50pt;
-	position: relative;
 }
 
 ul
@@ -177,6 +171,7 @@ a
 	border-bottom: thin dotted;
 	text-decoration: none;
 	color: inherit;
+	word-wrap: break-word;
 }
 
 a:visited { }
@@ -223,13 +218,13 @@ a:hover
 	right: 480pt;
 }
 
-*.item_standalone
+/*For pandoc image output*/
+.figure
 {
-	display: inline-block;
-	line-height: 110%;
-	text-align: left;
-	padding-left: 12pt;
-	margin-bottom: 7pt;
+	font-size: small;
+	margin: 10pt 0 7pt 0;
+	vertical-align: center;
+	border: black solid 2pt;
 }
 
 .footer
