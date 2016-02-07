@@ -198,12 +198,6 @@ span.textbox {
 
 @media print
 {
-    table:last-of-type
-        {
-        /* Don't display last table */
-        display: none;
-        font-size: 1%;
-        }
      a 
      {
 	/* Make link text identical to other text */
