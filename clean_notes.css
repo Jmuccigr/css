@@ -59,20 +59,20 @@ blockquote {
 	font-size: smaller;
 }
 
+code {
+	background-color: lightblue;
+	padding: 0 .1em 0 .1em;
+}
+
+}
 table {
 	width: 100%;
 	padding-bottom: 6pt;
 }
 
 table tr td {
-	
-
 /*background-color: red;*/
-	
-
 /*margin-bottom: 7pt;*/
-	
-
 /*left: 105pt;*/
 	vertical-align: top;
 	padding-bottom: .6em;
@@ -85,8 +85,6 @@ th {
 }
 
 p ~ table {
-	
-
 }
 
 /*	display: inline
@@ -103,7 +101,6 @@ ul {
 }
 
 p + ul {
-	/*margin-top: -5pt;*/
 }
 
 a {
@@ -196,16 +193,22 @@ span.textbox {
 	padding: 0pt 75pt 50pt 75pt;
 }
 
-@media print
-{
-     a 
-     {
+@media print {
+
+a {
 	/* Make link text identical to other text */
 	border-style: none;
 }
-	body
-	{
+
+body {
 	/* White background to let paper color through */
 	background-color: white;
-	}
+}
+
+code {
+	/*Give it a little pop on the white page.*/
+	color:  inherit;
+	background-color: lightgrey;
+}
+
 }
