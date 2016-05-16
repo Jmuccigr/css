@@ -64,7 +64,6 @@ code {
 	padding: 0 .1em 0 .1em;
 }
 
-}
 table {
 	width: 100%;
 	padding-bottom: 6pt;
@@ -207,8 +206,7 @@ body {
 
 code {
 	/*Give it a little pop on the white page.*/
-	color:  inherit;
-	background-color: lightgrey;
+	background-color: lightgray;
 }
 
 }
