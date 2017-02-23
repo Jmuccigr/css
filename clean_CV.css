@@ -219,6 +219,10 @@ hr {
 @media print
 {
 
+tr {
+	page-break-inside: avoid; 
+}
+
 table:last-of-type {
 /* Don't display last table */
         display: none;
