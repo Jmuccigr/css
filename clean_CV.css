@@ -209,15 +209,19 @@ a:hover {
 	color: red;
 }
 
-hr {
-	height: 2px;
-	background-color: lightgray;
-	text-align: center;
-	border: none;
+/*Make it print out with nice margins.*/
+
+@page { 
+    margin: 2cm .5cm 2cm .5cm;
+}
+
+@page :first {
+    margin: 1cm 0cm 2cm 0cm;
 }
 
 @media print
 {
+
 
 tr {
 	page-break-inside: avoid; 
@@ -225,7 +229,7 @@ tr {
 
 table:last-of-type {
 /* Don't display last table */
-        display: none;
+    display: none;
 	font-size: 1%;
 }
 
@@ -234,9 +238,16 @@ a {
 	border-style: none;
 }
 
+div {
+    margin: 5px 5px;
+}
+
 body {
 /*White background to let paper color through */
 	background-color: white;
+
+/* shrink the font a little for the @page settings. */
+	font-size: 95%;
 }
 
 h3 {
