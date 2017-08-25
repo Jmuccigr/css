@@ -100,6 +100,10 @@ table:first-of-type, table:last-of-type {
 	font-weight: lighter;
 }
 
+table:first-of-type tr td:first-child {
+	width: 210pt;
+}
+
 table:last-of-type {
 	border-top: 2px solid lightgray;
 	margin-top: 2em;
@@ -236,6 +240,7 @@ table:last-of-type {
 a {
 /* Make link text identical to other text */
 	border-style: none;
+	color:  black;
 }
 
 div {
