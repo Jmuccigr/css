@@ -118,7 +118,7 @@ table:first-of-type tr td {
 }
 
 table:not(:first-of-type):not(:last-of-type) tr td:first-child {
-	font-size: smaller;
+	font: smaller;
 }
 
 th {
@@ -213,19 +213,14 @@ a:hover {
 	color: red;
 }
 
-/*Make it print out with nice margins.*/
-
-@page { 
-    margin: 2cm .5cm 2cm .5cm;
-}
-
-@page :first {
-    margin: 1cm 0cm 2cm 0cm;
-}
-
 @media print
 {
 
+/*Optimized for Firefox since Safari ignores @page & other things*/
+
+h1 {
+    margin-top: 0cm;
+}
 
 tr {
 	page-break-inside: avoid; 
@@ -234,13 +229,12 @@ tr {
 table:last-of-type {
 /* Don't display last table */
     display: none;
-	font-size: 1%;
 }
 
 a {
 /* Make link text identical to other text */
 	border-style: none;
-	color:  black;
+	color:  inherit;
 }
 
 div {
@@ -250,9 +244,13 @@ div {
 body {
 /*White background to let paper color through */
 	background-color: white;
-
-/* shrink the font a little for the @page settings. */
-	font-size: 95%;
+/* Increase the font a little for the @page settings. */
+	font-size: 115%;
+	display:table;
+	table-layout:fixed;
+	padding-top: 0;
+	padding-bottom: 0;
+	height:auto;
 }
 
 h3 {
@@ -261,4 +259,6 @@ h3 {
 
 h4 {
 	page-break-before: avoid;
+}
+
 }
