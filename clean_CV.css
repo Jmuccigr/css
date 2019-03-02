@@ -91,6 +91,7 @@ table tr td {
 table tr td:first-child {
 	width: 110pt;
 	padding-left: 11pt;
+	font-size: smaller;
 }
 
 table:first-of-type, table:last-of-type {
@@ -103,6 +104,7 @@ table:first-of-type, table:last-of-type {
 
 table:first-of-type tr td:first-child {
 	width: 250pt;
+	font-size: inherit;
 }
 
 table:last-of-type {
