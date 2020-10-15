@@ -103,7 +103,7 @@ table:first-of-type, table:last-of-type {
 }
 
 table:first-of-type tr td:first-child {
-  width: 250pt;
+  width: 50%;
   font-size: inherit;
 }
 
@@ -243,15 +243,11 @@ tr {
 }
 
 table:last-of-type {
-
-
 /* Don't display last table */
     display: none;
 }
 
 a {
-
-
 /* Make link text identical to other text */
   border-style: none;
   color: inherit;
@@ -261,15 +257,18 @@ div {
   margin: 5px 5px;
 }
 
+span.dontprint {
+/* Hide when printing */
+	display: none;
+}
+
 body {
- 
 
 /*White background to let paper color through */
 	background-color: white;
 
-
 /* Increase the font a little for the @page settings. */
-	font-size: 115%;
+  font-size: 115%;
   display: table;
   table-layout: fixed;
   padding-top: 0;
