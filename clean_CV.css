@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  margin-top: 0cm;
   font-size: 24pt;
   font-weight: lighter;
   font-variant: small-caps;
@@ -66,6 +67,7 @@ h4 {
   font-size: 13pt;
   font-weight: lighter;
   margin-top: 0pt;
+  margin-bottom: 3pt;
 }
 
 h5 {
@@ -85,13 +87,12 @@ table {
 
 table tr td {
   vertical-align: top;
-  padding-bottom: .3em;
+  padding-bottom: .2em;
 }
 
 table tr td:first-child {
   width: 110pt;
   padding-left: 11pt;
-  font-size: smaller;
 }
 
 table:first-of-type, table:last-of-type {
@@ -120,8 +121,8 @@ table:first-of-type tr td {
   padding-bottom: .1em;
 }
 
-table:not(:first-of-type):not(:last-of-type) tr td:first-child {
-  font: smaller;
+table:not(:first-of-type,:last-of-type) tr td:first-child {
+  font-size: smaller;
 }
 
 th {
@@ -148,6 +149,7 @@ ul {
   list-style-type: circle;
   padding: 0pt 0pt 0pt 150pt;
   margin-top: -.5em;
+  margin-bottom: 7pt;
 }
 
 p + ul {
@@ -217,6 +219,12 @@ a:hover {
   color: red;
 }
 
+.smaller {
+  display:block;
+  font-size: 85%;
+  margin-left: 2em;
+}
+
 @media print {
 
 /*Optimized for Firefox since Safari ignores @page & other things*/
@@ -224,18 +232,6 @@ a:hover {
 .page-break {
   display: block;
   page-break-before: always;
-}
-
-h1 {
-  margin-top: 0cm;
-}
-
-h3 {
-  break-after: avoid;
-}
-
-h4 {
-  break-after: avoid;
 }
 
 tr {
